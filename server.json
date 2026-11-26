@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/ircc-express-entry",
+  "title": "Ircc Express Entry",
+  "description": "ircc-express-entry: rounds of invitations under Canada's Express Entry system, as Immigration…",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/ircc-express-entry",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-ircc-express-entry",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/ircc-express-entry/mcp"
+    }
+  ]
+}

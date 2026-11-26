@@ -1,0 +1,31 @@
+[
+  {
+    "name": "express_entry_rounds",
+    "description": "Rounds of invitations under Canada's Express Entry immigration system: draw number, date, program (e.g. Canadian Experience Class, Provincial Nominee Program, French language proficiency), invitations issued and the lowest CRS (Comprehensive Ranking System) score invited. Newest first. Pass draw_number for one round, or program / date range / limit to filter. Source: Immigration, Refugees and Citizenship Canada, Express Entry rounds of invitations.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "draw_number": {
+          "type": "number",
+          "description": "One round by number, e.g. 449"
+        },
+        "program": {
+          "type": "string",
+          "description": "Case-insensitive substring of the program name, e.g. \"Canadian Experience\""
+        },
+        "from_date": {
+          "type": "string",
+          "description": "Earliest draw date, YYYY-MM-DD"
+        },
+        "to_date": {
+          "type": "string",
+          "description": "Latest draw date, YYYY-MM-DD"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max rounds, 1-200 (default 20)"
+        }
+      }
+    }
+  }
+]
